@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start": "parcel src/index.html --no-cache",
+    "build": "parcel build index.js --no-cache --no-minify"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
