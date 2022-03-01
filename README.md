@@ -12,9 +12,3 @@ parcel src/index.html
 ```
 parcel build src/index.html --public-url .
 ```
-
-柠檬记账
-
-
-
-柠檬UI

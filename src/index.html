@@ -121,12 +121,20 @@
 
     .projects>ol>li {
       margin-bottom: 24px;
+      position: relative;
+    }
+    .projects>ol>li> img {
+      width: 100px;
+      position: absolute;
+      top: 48px;
+      right: 18px;
     }
 
     .projects>ol>li>header {
       display: flex;
       justify-content: space-between;
     }
+
     .projects>ol>li>ul {
       margin-top: 0;
       list-style-position: inside;
@@ -275,6 +283,10 @@
       .jobs header >span {
         margin: 0;
       }
+      .projects>ol>li> img {
+
+      visibility: hidden;
+    }
     }
   </style>
 </head>
@@ -285,7 +297,7 @@
       <h1>胡国星</h1>
       <!-- <img src="./images/logo.png" alt="" width="100" height="100"> -->
       <p>
-        男 | 24岁 | 前端开发工程师 | 天津
+        男 | 24岁 | 前端开发工程师 | 天津 | 一本
       </p>
       <p>
         微信：HGX15727517285 | 手机：<a href="tel:15727517285">15727517285</a> | 邮箱：<a href="mailto:axing1207@foxmail.com">axing1207@foxmail.com</a>
@@ -294,6 +306,26 @@
 
 
     </section>
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <ul class="total">
+          <li>能够使用HTML5标签编写 <strong>语义化</strong> 的界面</li>
+          <li>熟练使用 CSS3 / SCSS <strong>文档流</strong> / <strong>盒模型</strong> flex布局定位</li>
+          <li>掌握 <strong>Vue</strong> / <strong>VueRouter</strong> / <strong>Vuex</strong></li>
+          <li>掌握 <strong>React</strong> / <strong>Redux</strong> / <strong>ReactRouter</strong> / <strong>Hooks API</strong></li>
+          <li>熟悉 JavaScript、 ES6包括 let / Promise / await / 析构赋值</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+          <!-- <li>了解 Webpack 的配置和优化</li> -->
+          <li>掌握 Git / GitHub 工作部署流程</li>
+          <li>CET-4 / 计算机二、三级证书</li>
+        </ul>
+      </div>
+    </section>
+
+
+
 
     <section class="projects">
       <h2>项目经历</h2>
@@ -315,7 +347,7 @@
 
             </li>
             <li>
-              其次是探索Vue实现一些常用组件的方法。
+              其次是探索 Vue 实现一些常用组件的方法。
             </li>
             <li>
             无任何第三方依赖，源码精简，可自由拓展组件功能。
@@ -330,6 +362,7 @@
 
             </li>
           </ul>
+          <img src="./images/lemon-ui-2.png" alt="柠檬UI">
         </li>
         <li>
           <header>
@@ -352,19 +385,19 @@
 
             </li>
             <li>
-              项目用Vue Cli创建，使用了TypeScript规范代码
+              项目用 Vue Cli 创建，使用了 TypeScript 规范代码
 
             </li>
             <li>
-              使用了scss进行css处理，用Echarts进行图表分析
+              使用了 scss 进行 css 处理，用 Echarts 进行图表分析
 
             </li>
             <li>
-              用VueRouter实现路由的跳转，通过Vuex实现状态管理，
+              用 VueRouter 实现路由的跳转，通过 Vuex 实现状态管理
 
             </li>
             <li>
-              数据用LocalStorage进行存储,
+              数据用 LocalStorage 进行存储,
 
             </li>
             <li>
@@ -373,6 +406,8 @@
 
             </li>
           </ul>
+          <img src="./images/lemon-vue-morney.png" alt="柠檬记账">
+
         </li>
         <li>
           <header>
@@ -387,7 +422,7 @@
           </p>
           <ul>
             <li>
-              开发目的，熟练React的语法，了解React开发流程。
+              开发目的，熟练 React 的语法，了解 React 开发流程。
 
             </li>
             <li>
@@ -395,28 +430,38 @@
 
             </li>
             <li>
-              项目用create-react-app创建，使用了TypeScript规范代码
+              项目用 create-react-app 创建，使用了TypeScript规范代码
 
             </li>
             <li>
-              使用了scss进行css处理
+              使用了 scss 进行 css 处理
 
             </li>
             <li>
-              用React Router实现路由的跳转
+              用 React Router 实现路由的跳转
 
             </li>
             <li>
-              数据用LocalStorage进行存储,
+              数据用 LocalStorage 进行存储,
 
             </li>
             <li>
 
-              技术栈： <strong>TypeScript</strong> / <strong>React</strong> / <strong>React Router</strong> / <strong>自定义 Hooks</strong> /
+              技术栈： <strong>TypeScript</strong> / <strong>React</strong> / <strong>React Router</strong> / <strong>自定义 Hooks</strong> 
 
             </li>
           </ul>
+          <img src="./images/lemon-react-morney.png" alt="柠檬记账-React">
+
         </li>
+        
+      </ol>
+    </section>
+
+
+     <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
         <li>
           <header>
             <h3>前端导航网站</h3>
@@ -441,47 +486,16 @@
 
             </li>
           </ul>
+
         </li>
-      </ol>
-    </section>
-
-
-
-
-
-    <section class="skills">
-      <h2>技能</h2>
-      <div class="wrapper">
-        <ul class="total">
-          <li>能够使用HTML5标签编写 <strong>语义化</strong> 的界面</li>
-          <li>熟练使用CSS3/SCSS <strong>文档流</strong> / <strong>盒模型</strong> flex布局定位</li>
-          <!-- <li>熟练 <strong>JavaScript</strong> / <strong>TypeScript</strong>语言，掌握ES6语法</li> -->
-          <li>掌握JavaScript，ES6语法</li>
-
-          <li>掌握 <strong>Vue</strong> / <strong>VueRouter</strong> / <strong>Vuex</strong></li>
-          <li>掌握 <strong>React</strong> / <strong>Redux</strong> / <strong>ReactRouter</strong> / <strong>Hooks API</strong></li>
-          <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
-          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-          <li>了解 Webpack 的配置和优化</li>
-          <li>掌握 Git / GitHub 工作部署流程</li>
-          <li>CET-4 / 计算机二、三级证书</li>
-        </ul>
-      </div>
-    </section>
-
-
-
-    <!-- <section class="openSource">
-      <h2>开源项目</h2>
-      <ul>
         <li>
           <header>
             <h3>自己写的 DOM 库</h3>
-            <a href="#">源码链接</a>
+            <a href="https://github.com/hushuo1207/dom-pack" target="_blank">源码链接</a>
           </header>
-          <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
+          <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
         </li>
-        <li class="page2">
+        <!-- <li class="page2">
           <header>
             <h3>会动的哆啦A梦</h3>
             <span>
@@ -490,19 +504,19 @@
             </span>
           </header>
           <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
-        </li>
+        </li> -->
         <li>
           <header>
             <h3>简易画板</h3>
             <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
+              <a href="https://github.com/hushuo1207/canvas-demo-1" target="_blank">源码链接</a>
+              <a href="https://hushuo1207.github.io/canvas-demo-1/" target="_blank">项目预览</a>
             </span>
           </header>
           <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
         </li>
       </ul>
-    </section> -->
+    </section>
 
 
 
@@ -554,7 +568,7 @@
       <h2>教育经历</h2>
       <p>
         <span><time>2015年</time>~<time>2019年</time></span>
-        南昌航空大学 信息工程学院 电子信息工程 本科</p>
+        南昌航空大学 信息工程学院 电子信息工程 一本</p>
     </section>
 
   </article>
