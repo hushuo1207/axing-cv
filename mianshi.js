@@ -20,7 +20,7 @@ const deepClone=(obj, cache)=>{
             if(obj.prototype){
                 result = obj.apply(result, arguments);
             }else{
-                result = (...arguments)=> obj.call(undefined, ...arguments);
+                result = (...arg)=> obj.call(undefined, ...arg);
             }
         }else if(obj instanceof Array){
             result = []
@@ -291,3 +291,19 @@ setTimeout(()=>{
     e.emit('click', 'frank')
 },3000)
         
+
+
+
+
+
+
+
+
+HTML5 
+//文章
+article nav aside header footer main 
+// 视频
+canvas video audio
+// 图片
+canvas = document.getElementById('canvas')
+ctx = canvas.getContext('2d')
