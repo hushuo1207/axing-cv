@@ -1,502 +1,454 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover" />
+    <title>我的简历</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>我的简历</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+      body {
+        background: #eee;
+        margin: 20px 0;
+      }
 
-    body {
-      background: #eee;
-      margin: 20px 0;
-    }
-
-    article {
-      width: 21cm;
-      min-height: 29.7cm;
-      background: white;
-      margin: 0 auto;
-      overflow: auto;
-      padding: 1em;
-    }
-  </style>
-  <style media="print">
-    body {
-      margin: 0;
-    }
-
-    .page2 {
-      page-break-before: always;
-      margin-top: 30px;
-    }
-  </style>
-  <style>
-    p {
-      margin: .3em 0;
-    }
-
-    h1 {
-      font-size: 25px;
-      margin-top: 0;
-    }
-
-    h4,
-    h5,
-    h6 {
-      font-weight: normal;
-    }
-
-    ol,
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    strong {
-      font-weight: normal;
-      color: #f60;
-    }
-
-    a {
-      color: #999;
-      text-decoration: none;
-      border-bottom: 1px solid;
-    }
-
-    p,
-    li {
-      color: #666;
-    }
-
-    strong {
-      font-weight: normal;
-    }
-
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-    }
-
-    .bio {
-      position: relative;
-    }
-
-    .bio img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    .bio a{
-      color: #666;
-      border: none;
-    }
-  </style>
-
-  <style>
-    .projects p {
-      color: #666;
-    }
-
-    .projects strong {
-      color: #f60;
-    }
-
-    .projects>ol {
-      margin-top: 0;
-      list-style-position: inside;
-      padding: 0;
-    }
-
-    .projects>ol>li {
-      margin-bottom: 24px;
-      position: relative;
-    }
-    .projects>ol>li> img {
-      width: 100px;
-      position: absolute;
-      top: 48px;
-      right: 18px;
-    }
-
-    .projects>ol>li>header {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .projects>ol>li>ul {
-      margin-top: 0;
-      list-style-position: inside;
-      padding: 0;
-      padding-left: 1em;
-      list-style: disc;
-    }
-    .projects>ol>li>ul>li {
-      margin: .3em 0;
-    }
-    .projects>ol>li h3 {
-      display: inline-block;
-    }
-  </style>
-  <style>
-    #skills {
-
-      width: 500px;
-      height: 270px;
-    }
-    @media print {
-      #skills{display:none;}
-    }
-
-
-    .skills>.wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .skills>.wrapper>:first-child {
-      margin-right: 24px;
-    }
-
-    .skills>.wrapper>ul {
-      color: #666;
-      padding-left: 1em;
-      list-style: disc;
-      
-    }
-
-    .skills>.wrapper strong {
-      color: #f60;
-    }
-
-    .skills>.wrapper>ul>li {
-      line-height: 1.2;
-      margin-bottom: 8px;
-    }
-  </style>
-  <style>
-    .openSource header img {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    .openSource>ul>li {
-      margin-bottom: 24px;
-    }
-
-    .openSource header {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
-  <style>
-    .jobs>ol>li {
-      margin: 12px 0;
-    }
-    .jobs>ol>li>ul>li {
-      margin: 4px 0;
-    }
-    .jobs header {
-      display: flex;
-      color: #666;
-      margin-bottom: 12px;
-    }
-
-    .jobs header>h3 {
-      font-size: 18px;
-      color: #333;
-    }
-
-    .jobs header>h4 {
-      margin-left: 1em;
-      font-size: 18px;
-    }
-
-    .jobs header>span {
-      font-size: 18px;
-      margin-left: auto;
-    }
-  </style>
-
-
-
-  <style>
-    @media (max-width: 500px) {
+      article {
+        width: 21cm;
+        min-height: 29.7cm;
+        background: white;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 1em;
+      }
+    </style>
+    <style media="print">
       body {
         margin: 0;
       }
 
-      article {
-        width: auto;
-        height: auto;
+      .page2 {
+        page-break-before: always;
+        margin-top: 30px;
+      }
+    </style>
+    <style>
+      p {
+        margin: 0.3em 0;
+      }
+
+      h1 {
+        font-size: 25px;
+        margin-top: 0;
+      }
+
+      h4,
+      h5,
+      h6 {
+        font-weight: normal;
+      }
+
+      ol,
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      strong {
+        font-weight: normal;
+        color: #f60;
+      }
+
+      a {
+        color: #999;
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+
+      p,
+      li {
+        color: #666;
+      }
+
+      strong {
+        font-weight: normal;
+      }
+
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+      }
+
+      .bio {
+        position: relative;
       }
 
       .bio img {
-        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .bio a {
+        color: #666;
+        border: none;
+      }
+    </style>
+
+    <style>
+      .projects p {
+        color: #666;
       }
 
-      .skills .wrapper {
-        flex-direction: column;
+      .projects strong {
+        color: #f60;
       }
-      .skills .wrapper .total{
-        list-style: circle;
-        
-      } 
 
+      .projects > ol {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .projects > ol > li {
+        margin-bottom: 24px;
+        position: relative;
+      }
+      .projects > ol > li > img {
+        width: 100px;
+        position: absolute;
+        top: 48px;
+        right: 18px;
+      }
+
+      .projects > ol > li > header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .projects > ol > li > ul {
+        margin-top: 0;
+        list-style-position: inside;
+        padding: 0;
+        padding-left: 1em;
+        list-style: disc;
+      }
+      .projects > ol > li > ul > li {
+        margin: 0.3em 0;
+      }
+      .projects > ol > li h3 {
+        display: inline-block;
+      }
+    </style>
+    <style>
       #skills {
-        width: auto;
+        width: 500px;
+        height: 270px;
       }
-      .jobs header{
-        flex-direction: column;
+      @media print {
+        #skills {
+          display: none;
+        }
       }
-      .jobs header >h3,
-      .jobs header >h4,
-      .jobs header >span {
-        margin: 0;
+
+      .skills > .wrapper {
+        display: flex;
+        justify-content: space-between;
       }
-      .projects>ol>li> img {
 
-      visibility: hidden;
-    }
-    }
-  </style>
-</head>
+      .skills > .wrapper > :first-child {
+        margin-right: 24px;
+      }
 
-<body>
-  <article>
-    <section class="bio">
-      <h1>胡国星</h1>
-      <!-- <img src="./images/logo.png" alt="" width="100" height="100"> -->
-      <p>
-        男 | 25岁 | 前端开发工程师 | 天津 | 一本
-      </p>
-      <p>
-        微信：HGX15727517285 | 手机：<a href="tel:15727517285">15727517285</a> | 邮箱：<a href="mailto:axing1207@foxmail.com">axing1207@foxmail.com</a>
-      </p>
-      
+      .skills > .wrapper > ul {
+        color: #666;
+        padding-left: 1em;
+        list-style: disc;
+      }
 
+      .skills > .wrapper strong {
+        color: #f60;
+      }
 
-    </section>
+      .skills > .wrapper > ul > li {
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+    </style>
+    <style>
+      .openSource header img {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .openSource > ul > li {
+        margin-bottom: 24px;
+      }
 
-    <section class="skills">
-      <h2>技能</h2>
-      <div class="wrapper">
-        <ul class="total">
-          <li>能够使用HTML5标签编写 <strong>语义化</strong> 的界面</li>
-          <li>熟练使用 CSS3 / SCSS <strong>文档流</strong> / <strong>盒模型</strong> flex布局定位</li>
-          <li>熟悉 <strong>JavaScript</strong> ES6 语法</li>
-          <li>掌握 <strong>Vue</strong> / <strong>VueRouter</strong> / <strong>Vuex</strong></li>
-          <li>了解 <strong>React</strong> / <strong>ReactRouter</strong> / <strong>Hooks API</strong></li>
-          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-     <!-- <li>了解 Webpack 的配置和优化</li> -->
-          <li>掌握 Git / GitHub 工作部署流程、获得 CET-4、计算机二、三级证书</li>
-        </ul>
-      </div>
-    </section>
+      .openSource header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <style>
+      .jobs > ol > li {
+        margin: 12px 0;
+      }
+      .jobs > ol > li > ul > li {
+        margin: 6px 0;
+      }
+      .jobs header {
+        display: flex;
+        color: #666;
+        margin-bottom: 12px;
+      }
 
-    <section class="jobs">
-      <h2>工作经历</h2>
-      <ol>
-        <li>
-          <header>
-            <h3> 易云图科技有限公司 </h3>
-            <h4>前端开发工程师</h4>
-            <span><time>2022年8月</time>~<time>至今</time></span>
-          </header>
-          <ul>
-            <li>
-              根据业务需求和UI设计稿完成对项目的开发，并对负责项目进行项目排期
-            </li>
-            <li>
+      .jobs header > h3 {
+        font-size: 18px;
+        color: #333;
+      }
+
+      .jobs header > h4 {
+        margin-left: 1em;
+        font-size: 18px;
+      }
+
+      .jobs header > span {
+        font-size: 18px;
+        margin-left: auto;
+      }
+    </style>
+
+    <style>
+      @media (max-width: 500px) {
+        body {
+          margin: 0;
+        }
+
+        article {
+          width: auto;
+          height: auto;
+        }
+
+        .bio img {
+          display: none;
+        }
+
+        .skills .wrapper {
+          flex-direction: column;
+        }
+        .skills .wrapper .total {
+          list-style: circle;
+        }
+
+        #skills {
+          width: auto;
+        }
+        .jobs header {
+          flex-direction: column;
+        }
+        .jobs header > h3,
+        .jobs header > h4,
+        .jobs header > span {
+          margin: 0;
+        }
+        .projects > ol > li > img {
+          visibility: hidden;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <section class="bio">
+        <h1>胡国星</h1>
+        <!-- <img src="./images/logo.png" alt="" width="100" height="100"> -->
+        <p>男 | 26岁 | 前端开发工程师 | 天津 | 一本</p>
+        <p>
+          微信：18020075990 | 手机：<a href="tel:15727517285">18020075990</a> | 邮箱：<a
+            href="mailto:axing1207@foxmail.com"
+            >axing1207@foxmail.com</a
+          >
+        </p>
+      </section>
+
+      <section class="skills">
+        <h2>技能</h2>
+        <div class="wrapper">
+          <ul class="total">
+            <li>能够使用HTML5标签编写 <strong>语义化</strong> 的界面</li>
+            <li>熟练使用 CSS3 / SCSS <strong>文档流</strong> / <strong>盒模型</strong> flex布局定位</li>
+            <li>熟悉 <strong>JavaScript</strong> ES6 语法</li>
+            <li>掌握 <strong>Vue</strong> / <strong>VueRouter</strong> / <strong>Vuex</strong></li>
+            <li>了解 <strong>React</strong> / <strong>ReactRouter</strong> / <strong>Hooks API</strong></li>
+            <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+            <!-- <li>了解 Webpack 的配置和优化</li> -->
+            <li>掌握 Git / GitHub 工作部署流程、获得 CET-4、计算机二、三级证书</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="jobs">
+        <h2>工作经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>易云图科技有限公司</h3>
+              <h4>前端开发工程师</h4>
+              <span><time>2022年8月</time>~<time>至今</time></span>
+            </header>
+            <ul>
+              <li>根据业务需求和UI设计稿完成对项目的开发，并对负责项目进行项目排期。</li>
+              <li>
+                前期独立负责项目的开发和维护，主要使用技术有<strong>Vue2</strong> 、<strong>JavaScript</strong> 。
+                <!-- </li> -->
+                <!-- <li> -->
+                后期是团队开发的主力，并负责给后面加入的同事进行技术的分享和讲解。主要使用技术有<strong>Vue3</strong>
+                、<strong>JavaScript</strong>
+              </li>
+
+              <li>定期组织内部的分享，主要是<strong>maptalks</strong> 的使用技巧。</li>
+              <!-- <li>
               使用 <strong>SVN、Git</strong> 对代码进行版本及环境管理
             <li>
               使用 <strong>Vue</strong> 及前端基础开发工具进行开发
-            </li>
-          </ul>
-        </li>
-      </ol>
-    </section>
+            </li> -->
+            </ul>
+          </li>
+        </ol>
+      </section>
 
-
-
-    <section class="projects">
-      <h2>项目经历</h2>
-      <ol>
-        <li>
-          <header>
-            <h3>柠檬UI</h3>
-            <span>
-              <a href="https://github.com/hushuo1207/lemon-ui-2" target="_blank">源码链接</a>
-              <a href="https://axing-website.gitee.io/lemon-ui-2" target="_blank">项目预览</a>
-            </span>
-          </header>
-          <p>
-            一套基于 Vue 开发的组件库，无依赖、体积小、简单易用
-          </p>
-          <ul>
-            <li>
-            开发目的，主要是个人对于技术的学习、研究的总结。
-
-            </li>
-            <li>
-              其次是探索 Vue 实现一些常用组件的方法。
-            </li>
-            <li>
-            无任何第三方依赖，源码精简，可自由拓展组件功能。
-
-            </li>
-            <li>
-
-              目前已经支持按钮、手风琴、布局、弹出提示框等UI组件。
-            </li>
-            <li>
-            技术栈：<strong>Vue</strong> / <strong>JavaScript</strong> / <strong>Parcel</strong> / <strong>SCSS</strong>
-
-            </li>
-          </ul>
-          <img src="./images/lemon-ui-2.png" alt="柠檬UI">
-        </li>
-        <li>
-          <header>
-            <h3>柠檬记账</h3>
-            <span>
-              <a href="https://github.com/hushuo1207/vue-money-lemon" target="_blank">源码链接</a>
-              <a href="https://axing-website.gitee.io/lemon-morney-website" target="_blank">项目预览</a>
-            </span>
-          </header>
-          <p>
-            基于 Vue、TypeScript 的移动端单页面应用
-          </p>
-          <ul>
-            <li>
-            开发目的，满足日常的记账需求，快速、简单和图表分析。
-
-            </li>
-            <li>
-            实现功能，记账、账单明细、图表简单分析、标签可选、记录可改。
-
-            </li>
-            <li>
-              项目用 Vue Cli 创建，使用了 TypeScript 规范代码
-
-            </li>
-            <li>
-              使用了 scss 进行 css 处理，用 Echarts 进行图表分析
-
-            </li>
-            <li>
-              用 VueRouter 实现路由的跳转，通过 Vuex 实现状态管理
-
-            </li>
-            <li>
-              数据用 LocalStorage 进行存储,
-
-            </li>
-            <li>
-            
-            技术栈： <strong>TypeScript</strong> / <strong>Vue Cli</strong> / <strong>Vue Router</strong> / <strong>Vuex</strong> / <strong>SCSS</strong> / <strong>Echarts</strong>
-
-            </li>
-          </ul>
-          <img src="./images/lemon-vue-morney.png" alt="柠檬记账">
-
-        </li>
-        <!-- <br>
+      <section class="projects">
+        <h2>项目经历</h2>
+        <ol>
+          <li>
+            <header>
+              <h3>某公安局大数据实战中心</h3>
+              <!-- <span>
+                <a href="https://github.com/hushuo1207/lemon-ui-2" target="_blank">源码链接</a>
+                <a href="https://axing-website.gitee.io/lemon-ui-2" target="_blank">项目预览</a>
+              </span> -->
+            </header>
+            <p>一套基于 Vue 开发的组件库，无依赖、体积小、简单易用</p>
+            <ul>
+              <li>开发目的，主要是个人对于技术的学习、研究的总结。</li>
+              <li>其次是探索 Vue 实现一些常用组件的方法。</li>
+              <li>无任何第三方依赖，源码精简，可自由拓展组件功能。</li>
+              <li>目前已经支持按钮、手风琴、布局、弹出提示框等UI组件。</li>
+              <li>
+                技术栈：<strong>Vue3</strong> / <strong>JavaScript</strong> / <strong>element UI Plus</strong> /
+                <strong>maptalks </strong>/ <strong>webpack </strong>
+              </li>
+            </ul>
+            <!-- <img src="./images/lemon-ui-2.png" alt="柠檬UI" />  -->
+          </li>
+          <li>
+            <header>
+              <h3>柠檬UI</h3>
+              <span>
+                <a href="https://github.com/hushuo1207/lemon-ui-2" target="_blank">源码链接</a>
+                <a href="https://axing-website.gitee.io/lemon-ui-2" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>一套基于 Vue 开发的组件库，无依赖、体积小、简单易用</p>
+            <ul>
+              <li>开发目的，主要是个人对于技术的学习、研究的总结。</li>
+              <li>其次是探索 Vue 实现一些常用组件的方法。</li>
+              <li>无任何第三方依赖，源码精简，可自由拓展组件功能。</li>
+              <li>目前已经支持按钮、手风琴、布局、弹出提示框等UI组件。</li>
+              <li>
+                技术栈：<strong>Vue</strong> / <strong>JavaScript</strong> / <strong>Parcel</strong> /
+                <strong>SCSS</strong>
+              </li>
+            </ul>
+            <img src="./images/lemon-ui-2.png" alt="柠檬UI" />
+          </li>
+          <li>
+            <header>
+              <h3>柠檬记账</h3>
+              <span>
+                <a href="https://github.com/hushuo1207/vue-money-lemon" target="_blank">源码链接</a>
+                <a href="https://axing-website.gitee.io/lemon-morney-website" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>基于 Vue、TypeScript 的移动端单页面应用</p>
+            <ul>
+              <li>开发目的，满足日常的记账需求，快速、简单和图表分析。</li>
+              <li>实现功能，记账、账单明细、图表简单分析、标签可选、记录可改。</li>
+              <li>项目用 Vue Cli 创建，使用了 TypeScript 规范代码</li>
+              <li>使用了 scss 进行 css 处理，用 Echarts 进行图表分析</li>
+              <li>用 VueRouter 实现路由的跳转，通过 Vuex 实现状态管理</li>
+              <li>数据用 LocalStorage 进行存储,</li>
+              <li>
+                技术栈： <strong>TypeScript</strong> / <strong>Vue Cli</strong> / <strong>Vue Router</strong> /
+                <strong>Vuex</strong> / <strong>SCSS</strong> / <strong>Echarts</strong>
+              </li>
+            </ul>
+            <img src="./images/lemon-vue-morney.png" alt="柠檬记账" />
+          </li>
+          <!-- <br>
         <br>
         <br>
         <br> -->
-        <li>
-          <header>
-            <h3>柠檬记账-React</h3>
-            <span>
-              <a href="https://github.com/hushuo1207/lemon-morney-react" target="_blank">源码链接</a>
-              <a href="https://axing-website.gitee.io/lemon-account-react-website" target="_blank">项目预览</a>
-            </span>
-          </header>
-          <p>
-            基于 React、TypeScript 的移动端单页面应用
-          </p>
-          <ul>
-            <li>
-              开发目的，熟练 React 的语法，了解 React 开发流程。
+          <li>
+            <header>
+              <h3>柠檬记账-React</h3>
+              <span>
+                <a href="https://github.com/hushuo1207/lemon-morney-react" target="_blank">源码链接</a>
+                <a href="https://axing-website.gitee.io/lemon-account-react-website" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>基于 React、TypeScript 的移动端单页面应用</p>
+            <ul>
+              <li>开发目的，熟练 React 的语法，了解 React 开发流程。</li>
+              <li>实现功能，记账、账单记录显示、标签可增删。</li>
+              <li>项目用 create-react-app 创建，使用了TypeScript规范代码</li>
+              <li>用React Router 实现路由的跳转</li>
+              <li>使用了scss 进行css 处理、数据用 LocalStorage 进行存储,</li>
+              <li>
+                技术栈： <strong>TypeScript</strong> / <strong>React</strong> / <strong>React Router</strong> /
+                <strong>自定义 Hooks</strong>
+              </li>
+            </ul>
+            <img src="./images/lemon-react-morney.png" alt="柠檬记账-React" />
+          </li>
+        </ol>
+      </section>
 
-            </li>
-            <li>
-              实现功能，记账、账单记录显示、标签可增删。
-
-            </li>
-            <li>
-              项目用 create-react-app 创建，使用了TypeScript规范代码
-
-            </li>
-            <li>
-              用React Router 实现路由的跳转
-
-            </li>
-            <li>
-              使用了scss 进行css 处理、数据用 LocalStorage 进行存储,
-
-            </li>
-            <li>
-
-              技术栈： <strong>TypeScript</strong> / <strong>React</strong> / <strong>React Router</strong> / <strong>自定义 Hooks</strong> 
-
-            </li>
-          </ul>
-          <img src="./images/lemon-react-morney.png" alt="柠檬记账-React">
-
-        </li>
-        
-      </ol>
-    </section>
-
-
-     <section class="openSource">
-      <h2>开源项目</h2>
-      <ul>
-        <li>
-          <header>
-            <h3>前端导航网站</h3>
-            <span>
-              <a href="https://github.com/hushuo1207/website-demo-1" target="_blank">源码链接</a>
-              <a href="https://axing-website.gitee.io/website-demo-1" target="_blank">项目预览</a>
-            </span>
-          </header>
-          <p>
-            一个能保存网址的简单网页--基于 JavaScript
-          </p>
-          <ul>
-            <li>
-              开发目的，保存日常浏览、学习的网页。
-            </li>
-            <li>
-              实现功能，保存网址、键盘可触发。
-            </li>
-            <li>
-            
-            技术栈： <strong>JavaScript</strong> / <strong>jQuery</strong> 
-
-            </li>
-          </ul>
-
-        </li>
-        <li>
-          <header>
-            <h3>自己写的 DOM 库</h3>
-            <a href="https://github.com/hushuo1207/dom-pack" target="_blank">源码链接</a>
-          </header>
-          <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
-        </li>
-        <!-- <li class="page2">
+      <section class="openSource">
+        <h2>开源项目</h2>
+        <ul>
+          <li>
+            <header>
+              <h3>前端导航网站</h3>
+              <span>
+                <a href="https://github.com/hushuo1207/website-demo-1" target="_blank">源码链接</a>
+                <a href="https://axing-website.gitee.io/website-demo-1" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>一个能保存网址的简单网页--基于 JavaScript</p>
+            <ul>
+              <li>开发目的，保存日常浏览、学习的网页。</li>
+              <li>实现功能，保存网址、键盘可触发。</li>
+              <li>技术栈： <strong>JavaScript</strong> / <strong>jQuery</strong></li>
+            </ul>
+          </li>
+          <li>
+            <header>
+              <h3>自己写的 DOM 库</h3>
+              <a href="https://github.com/hushuo1207/dom-pack" target="_blank">源码链接</a>
+            </header>
+            <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
+          </li>
+          <!-- <li class="page2">
           <header>
             <h3>会动的哆啦A梦</h3>
             <span>
@@ -506,23 +458,20 @@
           </header>
           <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
         </li> -->
-        <li>
-          <header>
-            <h3>简易画板</h3>
-            <span>
-              <a href="https://github.com/hushuo1207/canvas-demo-1" target="_blank">源码链接</a>
-              <a href="https://hushuo1207.github.io/canvas-demo-1/" target="_blank">项目预览</a>
-            </span>
-          </header>
-          <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
-        </li>
-      </ul>
-    </section>
+          <li>
+            <header>
+              <h3>简易画板</h3>
+              <span>
+                <a href="https://github.com/hushuo1207/canvas-demo-1" target="_blank">源码链接</a>
+                <a href="https://hushuo1207.github.io/canvas-demo-1/" target="_blank">项目预览</a>
+              </span>
+            </header>
+            <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+          </li>
+        </ul>
+      </section>
 
-
-
-
-    <!-- <section class="others">
+      <!-- <section class="others">
       <h2>其他链接</h2>
       <ul>
         <li><a href="">我的博客</a>，目前已有 21 篇技术文章</li>
@@ -530,16 +479,15 @@
       </ul>
     </section> -->
 
-    <section class="education">
-      <h2>教育经历</h2>
-      <p>
-        <span><time>2015年</time>~<time>2019年</time></span>
-        南昌航空大学 信息工程学院 电子信息工程 一本</p>
-    </section>
-
-  </article>
-  <!-- <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script> -->
-  <!-- <script src="./main.js"></script> -->
-</body>
-
+      <section class="education">
+        <h2>教育经历</h2>
+        <p>
+          <span><time>2015年</time>~<time>2019年</time></span>
+          南昌航空大学 信息工程学院 电子信息工程 一本
+        </p>
+      </section>
+    </article>
+    <!-- <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script> -->
+    <!-- <script src="./main.js"></script> -->
+  </body>
 </html>
